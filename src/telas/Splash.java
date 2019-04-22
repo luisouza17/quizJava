@@ -19,6 +19,8 @@ public class Splash extends javax.swing.JFrame {
      */
     public Splash() {
         initComponents();
+        this.setVisible(true);
+    this.setExtendedState(MAXIMIZED_BOTH);
         new Thread(){
             public void run(){
                 for (int i=0;i<=101;i++){
@@ -74,26 +76,28 @@ public class Splash extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Programmation Quiz");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(280, 90, 250, 50);
+        jLabel1.setBounds(590, 210, 250, 50);
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Status:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(180, 420, 70, 30);
+        jLabel2.setBounds(490, 540, 70, 30);
         getContentPane().add(jProgressBar1);
-        jProgressBar1.setBounds(190, 380, 430, 30);
+        jProgressBar1.setBounds(500, 500, 430, 30);
 
         info.setBackground(new java.awt.Color(255, 255, 255));
         info.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
         info.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(info);
-        info.setBounds(260, 420, 410, 30);
+        info.setBounds(570, 540, 410, 30);
 
-        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bg1.jpg"))); // NOI18N
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bg.jpg"))); // NOI18N
+        bg.setMaximumSize(new java.awt.Dimension(2560, 1600));
+        bg.setMinimumSize(new java.awt.Dimension(2560, 1600));
         getContentPane().add(bg);
-        bg.setBounds(-200, 10, 1010, 670);
+        bg.setBounds(-200, -180, 2190, 1260);
 
         pack();
         setLocationRelativeTo(null);
@@ -103,6 +107,7 @@ public class Splash extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        new Splash();
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

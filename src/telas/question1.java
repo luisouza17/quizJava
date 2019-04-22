@@ -12,14 +12,17 @@ import javax.swing.JOptionPane;
  * @author 396301368
  */
 public class question1 extends javax.swing.JFrame {
-
+    
     int vida = 3, score = 0, i = 0;
 
     /**
      * Creates new form question1
      */
     public question1() {
+        
         initComponents();
+        this.setVisible(true);
+    this.setExtendedState(MAXIMIZED_BOTH);
 
         a.setVisible(false);
         b.setVisible(false);
@@ -64,43 +67,43 @@ public class question1 extends javax.swing.JFrame {
         titulo.setForeground(new java.awt.Color(255, 255, 255));
         titulo.setText("Questão 1");
         getContentPane().add(titulo);
-        titulo.setBounds(340, 80, 130, 50);
+        titulo.setBounds(650, 230, 130, 50);
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Vidas:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(70, 20, 60, 30);
+        jLabel2.setBounds(380, 170, 60, 30);
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Pontos:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(620, 30, 70, 40);
+        jLabel3.setBounds(930, 180, 70, 40);
 
         pontos.setBackground(new java.awt.Color(255, 255, 255));
         pontos.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
         pontos.setForeground(new java.awt.Color(255, 255, 255));
         pontos.setText("0");
         getContentPane().add(pontos);
-        pontos.setBounds(700, 20, 70, 40);
+        pontos.setBounds(1010, 180, 70, 40);
 
         lblVidas.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
         lblVidas.setForeground(new java.awt.Color(255, 255, 255));
         lblVidas.setText("3");
         getContentPane().add(lblVidas);
-        lblVidas.setBounds(140, 20, 70, 30);
+        lblVidas.setBounds(450, 170, 70, 30);
 
         perg.setBackground(new java.awt.Color(255, 255, 255));
         perg.setFont(new java.awt.Font("MS Gothic", 1, 18)); // NOI18N
         perg.setForeground(new java.awt.Color(255, 255, 255));
         perg.setText("O HTML é uma linguagem de :");
         getContentPane().add(perg);
-        perg.setBounds(90, 220, 280, 70);
+        perg.setBounds(400, 370, 750, 70);
 
-        a.setBackground(new java.awt.Color(102, 102, 102));
+        a.setBackground(new java.awt.Color(0, 0, 0));
         buttonGroup1.add(a);
         a.setForeground(new java.awt.Color(255, 255, 255));
         a.setText("Programação");
@@ -110,29 +113,30 @@ public class question1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(a);
-        a.setBounds(110, 290, 120, 23);
+        a.setBounds(420, 440, 230, 23);
 
         b.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(b);
-        b.setForeground(new java.awt.Color(102, 102, 102));
+        b.setForeground(new java.awt.Color(255, 255, 255));
         b.setText("Estilização");
         getContentPane().add(b);
-        b.setBounds(110, 320, 120, 23);
+        b.setBounds(420, 470, 230, 23);
 
         buttonGroup1.add(c);
-        c.setForeground(new java.awt.Color(102, 102, 102));
+        c.setForeground(new java.awt.Color(255, 255, 255));
         c.setText("Consulta Estruturada");
         getContentPane().add(c);
-        c.setBounds(110, 350, 150, 23);
+        c.setBounds(420, 500, 230, 23);
 
         buttonGroup1.add(d);
-        d.setForeground(new java.awt.Color(102, 102, 102));
+        d.setForeground(new java.awt.Color(255, 255, 255));
         d.setText("Marcação de HiperTexto");
         getContentPane().add(d);
-        d.setBounds(110, 380, 180, 23);
+        d.setBounds(420, 530, 230, 23);
 
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setFont(new java.awt.Font("MS Gothic", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(153, 153, 153));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Próxima");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,11 +144,11 @@ public class question1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(370, 440, 110, 40);
+        jButton1.setBounds(680, 590, 110, 40);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bg.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bg2.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(-50, -20, 900, 720);
+        jLabel4.setBounds(-60, -500, 2450, 1540);
 
         pack();
         setLocationRelativeTo(null);
@@ -166,79 +170,210 @@ public class question1 extends javax.swing.JFrame {
                 d.setVisible(true);
                 jButton1.setText("próximo");
                 
+                titulo.setText("Questão 1");
                 perg.setText("O HTML é uma linguagem de :");
                 a.setText("Programação");
-                b.setText("AD");
-                c.setText("AD");
-                d.setText("AD");
+                b.setText("Decodificação");
+                c.setText("Codificação");
+                d.setText("Marcação de HiperTexto");
             break;
             case 2:
                 if(!d.isSelected()){
-                    lblVidas.setText(Integer.toString(vida - 1));
-                    
+                    vida = vida - 1 ;
+                    lblVidas.setText(Integer.toString(vida));
                 }else{
-                    pontos.setText(Integer.toString(score +10));
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
                 }
-                if(vida == 0){
-                    JOptionPane.showMessageDialog(null, "Burro pra carai");
-                }
-        }
-
-        String perguntas[][] = new String[9][1];
-        perguntas[0][0] = "O que é CSS?";
-        perguntas[1][0] = "O que é um arquivo index?";
-        perguntas[2][0] = "O que é Framework?";
-        perguntas[3][0] = "O que é significa a sigla WWW?";
-        perguntas[4][0] = "Quem criou a internet?";
-        perguntas[5][0] = "O que é CSS?";
-        perguntas[6][0] = "O que é CSS?";
-        perguntas[7][0] = "O que é CSS?";
-        perguntas[8][0] = "O que é CSS?";
-
-        String respostas[][] = new String[10][1];
-
-        int indice[] = new int[4];
-
-        /*for(int x=0; x<1; x++){
-            for(int y=0; y<1; x++){
-                perguntas[x][y] = buttonGroup1.getSelection().getActionCommand();
-                switch(perguntas[x][y]){
-                    case :
-                        break;
-                }
-            }
-        }*/
- /*if(vida > 0){
-            if(d.isSelected()){
-            score = score + 10;
-            pontos.setText(Integer.toString(score));
-            //Questão 2
-            titulo.setText("Questão 2");
-            perg.setText("O que é CSS?");
-            a.setText("Estilo de folha em cascata");
-            b.setText("Linguagem de Programação");
-            c.setText("Sistema Gerenciador de Banco de Dados");
-            d.setText("");
-            }else{
-                vida--;
-                vidas.setText(Integer.toString(vida));
-                //Questão 2
                 titulo.setText("Questão 2");
                 perg.setText("O que é CSS?");
-                a.setText("");
-                b.setText("");
-                c.setText("");
-                d.setText("");
-            }
-        }else{
-            System.exit(0);
-        }*/
+                a.setText("Estilo de folha em cascata");
+                b.setText("Linguagem de Programação");
+                c.setText("Sistema Gerenciador de Banco de Dados");
+                d.setText("Nenhuma das anteriores");
+            break;
+            case 3:
+                 if(!a.isSelected()){
+                    vida = vida - 1 ;
+                    lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+                titulo.setText("Questão 3");
+                perg.setText("Quem criou a Internet?");
+                a.setText("Bill Gates");
+                b.setText("Steve Jobs");
+                c.setText("Tim Bernes Lee");
+                d.setText("Alan Turing");
+            break;
+            case 4:
+                if(!c.isSelected()){
+                    vida = vida - 1 ;
+                    lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+                titulo.setText("Questão 4");
+                perg.setText("Qual o significado da sigla WWW?");
+                a.setText("Wide Web World");
+                b.setText("World Wide Web");
+                c.setText("Web World Wide");
+                d.setText("Nenhuma das alternativas");
+            break;
+            case 5:
+                if(!b.isSelected()){
+                vida = vida - 1 ;
+                lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+                titulo.setText("Questão 5");
+                perg.setText("Em que ano foi lançado o LINUX?");
+                a.setText("2000");
+                b.setText("1991");
+                c.setText("1990");
+                d.setText("2001");
+            break;
+            case 6:
+                if(!b.isSelected()){
+                vida = vida - 1 ;
+                lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+                titulo.setText("Questão 6");
+                perg.setText("O que é IONIC?");
+                a.setText("Sistema Gerenciador de Banco de Dados");
+                b.setText("Projeto vazio");
+                c.setText("Framework de Aplicações Híbridas");
+                d.setText("Linguagem de Programação");
+            break;
+            case 7:
+                if(!c.isSelected()){
+                vida = vida - 1 ;
+                lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+                titulo.setText("Questão 7");
+                perg.setText("Qual das alternativas abaixo NÃO é um Sistema Gerenciador de Banco de Dados ?");
+                a.setText("Oracle");
+                b.setText("MYSQL");
+                c.setText("MariaDB");
+                d.setText("PHP");
+            break;
+            case 8:
+                if(!d.isSelected()){
+                vida = vida - 1 ;
+                lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+                titulo.setText("Questão 8");
+                perg.setText("Linus Torvald desenvolveu:");
+                a.setText("Android");
+                b.setText("IOS");
+                c.setText("Linux");
+                d.setText("Windows");
+            break;
+            case 9:
+                if(!c.isSelected()){
+                vida = vida - 1 ;
+                lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+                titulo.setText("Questão 9");
+                perg.setText("GitHub é :");
+                a.setText("Repositório Online");
+                b.setText("Sistema de Versionamento");
+                c.setText("Sistema de lote");
+                d.setText("Sistema Operacional");
+            break;
+            case 10:
+                if(!a.isSelected()){
+                vida = vida - 1 ;
+                lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+                titulo.setText("Questão 10");
+                perg.setText("IF é:");
+                a.setText("Operador lógico");
+                b.setText("Estrutura condicional");
+                c.setText("Laço de Repetição");
+                d.setText("Tag em HTML");
+            break;
+            case 11:
+                if(!b.isSelected()){
+                vida = vida - 1 ;
+                lblVidas.setText(Integer.toString(vida));
+                }else{
+                    score = score +10;
+                    pontos.setText(Integer.toString(score));
+                }if(vida==0){
+                    JOptionPane.showMessageDialog(null, "Você perdeu!");
+                    System.exit(0);
+                }
+            break;
+            default:
+                a.setVisible(false);
+                b.setVisible(false);
+                c.setVisible(false);
+                d.setVisible(false);
+                titulo.setVisible(false);
+                perg.setVisible(false);
+                JOptionPane.showMessageDialog(null, "Você Ganhou");
+                System.exit(0);
+
+                
+            
+                        
+                 
+                
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        new question1();
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
